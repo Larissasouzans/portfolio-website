@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta charset="utf-8">
         <title>Larissa Souza - UX Designer</title>
     </head>
     <body>
         <header>
             <div>
-                <img src="img/olive/svg/logo.svg" alt="Larissa Souza"/>
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/olive/desktop-screens/Olive.jpg">
+                    <source media="(min-width:465px)" srcset="img/olive/desktop-screens/Olive.jpg">
+                    <img src="img/olive/desktop-screens/Olive.jpg" alt="Olive Picture">
+                    </picture>
                 <nav>
                     <ul>
                         <li><a href="index.html">Work</a></li>
@@ -20,7 +32,7 @@
         <main>
             <div>
                 <div>
-                    <h1>Hello, my name is Larissa Souza.<span> UX designer. Based in Munich</span></h1>                    
+                    <h1 class="h1 left">Hello, my name is Larissa Souza.<span> UX designer. Based in Munich</span></h1>                    
                     <p>I'm a UX designer in front-end training to improve my skills. Always looking to
                         improve my skills and create user-centered mindset methods that go according to
                         the possibilities of companies. Welcome and don't hesitate to connect with me.</p>
@@ -32,13 +44,13 @@
                     <div><!-- open row that holds (2) columns for project -->
                         <div><!-- open first column (used for image) -->
                             <picture>
-                                <source media="(min-width:650px)" srcset="C:\Users\lari_\Desktop\CareerFoundry\HTML\e1.4\portifolio-site-larissa-souza-v3\img\olive\desktop-screens\Olive.jpg">
-                                <source media="(min-width:465px)" srcset="C:\Users\lari_\Desktop\CareerFoundry\HTML\e1.4\portifolio-site-larissa-souza-v3\img\olive\desktop-screens\Olive.jpg">
-                                <img src="img/olive/desktop-screens/Olive.jpg" alt="Olive Picture" style="width:auto;">
+                                <source media="(min-width:650px)" srcset="img/olive/desktop-screens/logo.png">
+                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/logo.png">
+                                <img src="img/olive/desktop-screens/logo.png" alt="Logo Picture">
                           </picture>
                         </div><!-- end first column -->
                         <div><!-- open second column (used for text) -->
-                            <h3>Olive</h3><!-- heading for the project -->
+                            <h3 class="h3 left">Olive</h3><!-- heading for the project -->
                             <p><!-- open paragraph -->Olive is an app for people looking to be more aware of their
                             mental health. Over the course of 9 months I used various
                             programs such as Figma, UsabilityHub, Slack, Zoom, among
@@ -46,7 +58,7 @@
                             Interviews & Surveys, Personas & Journey maps, User flows & Sitemap, Card
                             Sorting, Prototyping, Usability Testing and more.
                             </p><!-- end paragraph -->
-                                <a href="olive.html" target="_self">Read more</a><!-- button or link label -->
+                                <a href="olive.html" target="_self" class="button">Read more</a><!-- button or link label -->
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->   
             </div>
@@ -56,7 +68,7 @@
                 <h2>Get in Touch</h2>
                 <p>Do you have any feedbacks about my work? Would you like to partner or collaborate? Always here for connections. Call: <a href="+4912345678900">+49 12345678900 </a> or Skype me at <a href="skype:larissasouzans">larissasouzans</a>. Prefer sending an email?</p>
                 <div>
-                    <a href="mailto:souzans.larissa@gmail.com">Email me</a>
+                    <a href="mailto:souzans.larissa@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
                     <!--Social Media Layout and Placeholders-->

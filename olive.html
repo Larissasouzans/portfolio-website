@@ -3,10 +3,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -15,10 +12,10 @@
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/olive/svg/logo.svg" alt="Larissa Souza"/>
+            <div class="container">
+                <img class="logo" src="img/olive/svg/logo.svg" alt="Larissa Souza"/>
                 <nav>
-                    <ul>
+                    <ul class="navigation"  >
                         <li><a href="index.html">Work</a></li>
                         <li><a href="About Larissa Souza.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -27,8 +24,8 @@
             </div>
         </header>
         <main>
-            <div>
-                <div>
+            <div id="hero">
+                <div class="container">
                     <h1>Olive</h1>
                 </div>
             </div>
@@ -76,7 +73,7 @@
                         </div>
                         <picture>
                             <source media="(min-width:650px)" srcset="img/olive/desktop-screens/affinity-mapping.png.png">
-                            <source media="(min-width:465px)" srcset="img/olive/desktop-screens/affinity-mapping.png.png">
+                            <source media="(min-width:465px)" srcset="img/olive/mobile-screens/affinity-mapping.png.png">
                             <img src="img/olive/desktop-screens/affinity-mapping.png.png" alt="Affinity Map" style="width:auto;">
                         </picture>
                     </div>
@@ -87,12 +84,12 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/lola-user.jpg">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/lola-user.jpg">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/lola-user.jpg">
                                 <img src="img/olive/desktop-screens/lola-user.jpg" alt="Lola User" style="width:auto;">
                             </picture>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/alexa-user.jpg">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/alexa-user.jpg">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/alexa-user.jpg">
                                 <img src="img/olive/desktop-screens/alexa-user.jpg" alt="Alexa User" style="width:auto;">
                             </picture>
                         </div>
@@ -104,12 +101,12 @@
                         <div>
                             <picture>                                
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/lola-user-journeys.jpg">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/lola-user-journeys.jpg">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/lola-user-journeys.jpg">
                                 <img src="img/olive/desktop-screens/lola-user-journeys.jpg" alt="Lola User Journey" style="width:auto;">
                             </picture>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/alexa-user-journeys.jpg">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/alexa-user-journeys.jpg">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/alexa-user-journeys.jpg">
                                 <img src="img/olive/desktop-screens/alexa-user-journeys.jpg" alt="Alexa User Journey" style="width:auto;">
                             </picture>
                         </div>
@@ -131,7 +128,7 @@
                                 <div>
                                     <picture>
                                         <source media="(min-width:650px)" srcset="img/olive/desktop-screens/user-flow-alexa1.png">
-                                        <source media="(min-width:465px)" srcset="img/olive/desktop-screens/user-flow-alexa1.png">            
+                                        <source media="(min-width:465px)" srcset="img/olive/mobile-screens/user-flow-alexa1.png">            
                                         <img src="img/olive/desktop-screens/user-flow-alexa1.png" alt="Alexa User Flow 1" style="width:auto;">
                                     </picture> 
                                  </div>  
@@ -165,7 +162,7 @@
                                 <div>
                                     <picture>
                                         <source media="(min-width:650px)" srcset="img/olive/desktop-screens/user-flow-alexa2.png">
-                                        <source media="(min-width:465px)" srcset="img/olive/desktop-screens/user-flow-alexa2.png">            
+                                        <source media="(min-width:465px)" srcset="img/olive/mobile-screens/user-flow-alexa2.png">            
                                         <img src="img/olive/desktop-screens/user-flow-alexa2.png" alt="Alexa User Flow 2" style="width:auto;">
                                     </picture> 
                                  </div>  
@@ -201,7 +198,7 @@
                                 <div>
                                     <picture>
                                         <source media="(min-width:650px)" srcset="img/olive/desktop-screens/user-flow-lola1.png">
-                                        <source media="(min-width:465px)" srcset="img/olive/desktop-screens/user-flow-lola1.png">            
+                                        <source media="(min-width:465px)" srcset="img/olive/mobile-screens/user-flow-lola1.png">            
                                         <img src="img/olive/desktop-screens/user-flow-lola1.png" alt="Lola User Flow 1" style="width:auto;">
                                     </picture> 
                                  </div>  
@@ -236,7 +233,7 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/wireframes.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/wireframes.png">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/wireframes.png">
                                 <img src="img/olive/desktop-screens/wireframes.png" alt="Wireframes" style="width:auto;">
                             </picture>
                         </div>
@@ -248,12 +245,12 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/usability-testing.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/usability-testing.png">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/usability-testing.png">
                                 <img src="img/olive/desktop-screens/usability-testing.png" alt="Usability Testing 1" style="width:auto;">
                             </picture>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/usability-testing2.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/usability-testing2.png">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/usability-testing2.png">
                                 <img src="img/olive/desktop-screens/usability-testing2.png" alt="Usability Testing 2" style="width:auto;">
                             </picture>
                         </div>
@@ -276,7 +273,7 @@
                                 <div>
                                     <picture>
                                         <source media="(min-width:650px)" srcset="img/olive/desktop-screens/accessibility1.png">
-                                        <source media="(min-width:465px)" srcset="img/olive/desktop-screens/accessibility1.png">            
+                                        <source media="(min-width:465px)" srcset="img/olive/mobile-screens/accessibility1.png">            
                                         <img src="img/olive/desktop-screens/accessibility1.png" alt="Accessibility 1" style="width:auto;">
                                     </picture>
                                 </div>
@@ -297,7 +294,7 @@
                                 <div>
                                     <picture>
                                         <source media="(min-width:650px)" srcset="img/olive/desktop-screens/accessibility2.png">
-                                        <source media="(min-width:465px)" srcset="img/olive/desktop-screens/accessibility2.png">            
+                                        <source media="(min-width:465px)" srcset="img/olive/mobile-screens/accessibility2.png">            
                                         <img src="img/olive/desktop-screens/accessibility2.png" alt="Accessibility 2" style="width:auto;">
                                     </picture>
                                 </div>
@@ -314,7 +311,7 @@
                             <div>
                                 <picture>
                                     <source media="(min-width:650px)" srcset="img/olive/desktop-screens/the-result.png">
-                                    <source media="(min-width:465px)" srcset="img/olive/desktop-screens/the-result.png">            
+                                    <source media="(min-width:465px)" srcset="img/olive/mobile-screens/the-result.png">            
                                     <img src="img/olive/desktop-screens/the-result.png" alt="The Result" style="width:auto;">
                                 </picture>  
                             </div>
@@ -332,7 +329,7 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/read-articles.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/read-articles.png">            
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/read-articles.png">            
                                 <img src="img/olive/desktop-screens/read-articles.png" alt="Read Articles" style="width:auto;">
                             </picture>
                         </div>
@@ -344,7 +341,7 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/login.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/login.png">            
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/login.png">            
                                 <img src="img/olive/desktop-screens/login.png" alt="Login" style="width:auto;">
                             </picture>
                         </div>
@@ -356,7 +353,7 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/add-mood.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/add-mood.png">            
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/add-mood.png">            
                                 <img src="img/olive/desktop-screens/add-mood.png" alt="Add Mood" style="width:auto;">
                             </picture>
                         </div>
@@ -368,7 +365,7 @@
                         <div>
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/report.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/report.png">            
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/report.png">            
                                 <img src="img/olive/desktop-screens/report.png" alt="Report" style="width:auto;">
                             </picture>
                         </div>
@@ -395,7 +392,7 @@
             </div>
         </main>
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Do you have any feedbacks about my work? Would you like to partner or collaborate? Always here for connections. Call: <a href="+4912345678900">+49 12345678900 </a> or Skype me at <a href="skype:larissasouzans">larissasouzans</a>. Prefer sending an email?</p>
                 <div>

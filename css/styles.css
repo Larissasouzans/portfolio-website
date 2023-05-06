@@ -3,6 +3,9 @@ Colors used:
 Primary Color (Blue): #05676e;
 Secondary Color (Green): #489c79;
 */
+* {
+  box-sizing: border-box;
+}
 body {
     background-color: #D9D9D9;
     font-family: 'Nunito', sans-serif;
@@ -51,7 +54,7 @@ body {
     text-decoration: underline; /* Underlining when hovering over a link */
   }
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #FF9A17;
   }
   a:active { /* selected link */
     color: #994c30;
@@ -84,4 +87,53 @@ a:focus {
   .button.contact:hover {
     background-color: #ff7f50;
     color: #ffffff;
+  }
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+  }
+  .row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  }
+  .logo {
+    max-width: 250px;
+    text-align: center;
+  }
+  header {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+  }
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav > ul > li {
+    display: inline-block;
+  }
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+  nav > ul > li > a:visited {
+    color: #ff7f50
+  }
+  #hero {
+    background-color: #ffe4c4;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+  }
+  .css-box-shadow {
+    /*start ------------*/
+    width: [object Object]px; 
+    height: [object Object]px; 
+    background: #F8F8F8; 
+    border: solid #BDBDBD 1px; 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
   }

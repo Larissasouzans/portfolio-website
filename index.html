@@ -3,9 +3,7 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -14,14 +12,14 @@
     </head>
     <body>
         <header>
-            <div>
+            <div class="container">
                 <picture>
-                    <source media="(min-width:650px)" srcset="img/olive/desktop-screens/Olive.jpg">
-                    <source media="(min-width:465px)" srcset="img/olive/desktop-screens/Olive.jpg">
-                    <img src="img/olive/desktop-screens/Olive.jpg" alt="Olive Picture">
+                    <source media="(min-width:650px)" srcset="img/olive/svg/logo.svg">
+                    <source media="(min-width:465px)" srcset="img/olive/svg/logo.svg">
+                    <img class="logo" src="img/olive/svg/logo.svg" alt="Logo Picture">
                     </picture>
                 <nav>
-                    <ul>
+                    <ul class="navigation">
                         <li><a href="index.html">Work</a></li>
                         <li><a href="About Larissa Souza.html">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -30,22 +28,22 @@
             </div>
         </header>
         <main>
-            <div>
-                <div>
+            <div id="hero">
+                <div class="container">
                     <h1 class="h1 left">Hello, my name is Larissa Souza.<span> UX designer. Based in Munich</span></h1>                    
                     <p>I'm a UX designer in front-end training to improve my skills. Always looking to
                         improve my skills and create user-centered mindset methods that go according to
                         the possibilities of companies. Welcome and don't hesitate to connect with me.</p>
                 </div>
             </div>
-            <div>
-                <div>
+            <div id="work">
+                <div class="container">
                     <h2>My Work</h2>
-                    <div><!-- open row that holds (2) columns for project -->
+                    <div class="row"><!-- open row that holds (2) columns for project -->
                         <div><!-- open first column (used for image) -->
                             <picture>
                                 <source media="(min-width:650px)" srcset="img/olive/desktop-screens/logo.png">
-                                <source media="(min-width:465px)" srcset="img/olive/desktop-screens/logo.png">
+                                <source media="(min-width:465px)" srcset="img/olive/mobile-screens/logo.png">
                                 <img src="img/olive/desktop-screens/logo.png" alt="Logo Picture">
                           </picture>
                         </div><!-- end first column -->
@@ -64,7 +62,7 @@
             </div>
         </main>
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Do you have any feedbacks about my work? Would you like to partner or collaborate? Always here for connections. Call: <a href="+4912345678900">+49 12345678900 </a> or Skype me at <a href="skype:larissasouzans">larissasouzans</a>. Prefer sending an email?</p>
                 <div>

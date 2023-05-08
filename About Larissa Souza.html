@@ -11,7 +11,7 @@
         <title>Larissa Souza - UX Designer</title>
     </head>
     <body>
-        <header class=".css-box-shadow">
+        <header>
             <div class="container">
                 <img class="logo" src="img/olive/svg/logo.svg" alt="Larissa Souza"/>
                 <nav>
@@ -30,10 +30,10 @@
                 </div>
             </div>
             <div>
-                <div>
+                <div class="about">
                     <img src="img/olive/desktop-screens/Profile.jpg" alt="Profile Picture">
                     <div>
-                        <div>
+                        <div class="my story">
                             <h2> My Story</h2>
                             <p>Hi, I'm Larissa, a UX designer with training in frontend
                                 development and a background in scientific research and quality
@@ -51,10 +51,10 @@
                         </div>
                         <div>
                             <h2>Skills & Tools</h2>
-                            <div>
+                            <div class="row" id="skills">
                                 <div>
                                     <h3 class="h3 left"> Relevant Skills</h3>
-                                    <ul> 
+                                    <ul class="bullets"> 
                                         <li>User Research </li>
                                         <li>Architecture</li>
                                         <li>Wireframing </li>
@@ -64,7 +64,7 @@
                                 </div>
                                 <div>
                                     <h3 class="h3 left"> Tools</h3>
-                                    <ul>
+                                    <ul class="bullets">
                                         <li>Figma </li>
                                         <li>Adobe XD</li>
                                         <li>HTML, CSS, JavaScrip </li>
@@ -85,18 +85,27 @@
                     <a href="mailto:souzans.larissa@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
-                    <!--Social Media Layout and Placeholders-->
-                    <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/" target="_blank">
-                        <img src="img/olive/svg/linkedin.svg" alt="Linkedin">
-                    </a>
-                    <a href="https://twitter.com/?lang=de" target="_blank">
-                        <img src="img/olive/svg/Twitter.svg" alt="Twitter"/>
-                    </a>
-                    <a href="https://www.behance.net/larissasouza123" target="_blank">
-                        <img src="img/olive/svg/behance.svg" alt="Behance">
-                    </a>
+                    <div class="footer icon">
+                        <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://twitter.com/?lang=d"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="https://www.behance.net/larissasouza123"><i class="fa-brands fa-behance fa-2x"></i></a>
                     </div>
-                    <p>Copyright Larissa Souza 2023</p>
+                    <div class="footer icon">
+                        <!--Social Media Layout and Placeholders-->
+                        <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/" target="_blank">
+                            <img src="img/olive/svg/linkedin.svg" alt="Linkedin">
+                        </a>
+                        <a href="https://twitter.com/?lang=de" target="_blank">
+                         <img src="img/olive/svg/Twitter.svg" alt="Twitter"/>
+                        </a>
+                        <a href="https://www.behance.net/larissasouza123" target="_blank">
+                            <img src="img/olive/svg/behance.svg" alt="Behance">
+                        </a>
+                    </div>
+                    <div>
+                        <p id="copyright">Copyright Larissa Souza 2023</p>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

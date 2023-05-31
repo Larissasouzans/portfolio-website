@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <meta charset="utf-8">
         <title>Larissa Souza - UX Designer</title>
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/olive/svg/logo.svg" alt="Larissa Souza"/>
+            <div class="container">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/olive/svg/logo.svg">
+                    <source media="(min-width:465px)" srcset="img/olive/svg/logo.svg">
+                    <img class="logo" src="img/olive/svg/logo.svg" alt="Logo Picture">
+                    </picture>
                 <nav>
-                    <ul>
-                        <li><a href="index.html">Work</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                    <ul class="navigation">
+                        <li class="header"><a href="index.html">Work</a></li>
+                        <li class="header"><a href="about.html">About</a></li>
+                        <li class="header"><a href="#contact">Contact</a></li>
                     </ul>
                   </nav>
             </div>
         </header>
         <main>
-            <div>
-                <div>
+            <div id="hero">
+                <div class="container">
                     <h1>About</h1>
                 </div>
             </div>
             <div>
-                <div>
-                    <img src="img/olive/Desktop Screens/Profile.jpg" alt="Profile Picture" style="width:auto;">
+                <div id="about">
+                    <img src="img/olive/desktop-screens/Profile.jpg" alt="Profile Picture">
                     <div>
-                        <div>
+                        <div id="my story">
                             <h2> My Story</h2>
                             <p>Hi, I'm Larissa, a UX designer with training in frontend
                                 development and a background in scientific research and quality
@@ -45,10 +55,10 @@
                         </div>
                         <div>
                             <h2>Skills & Tools</h2>
-                            <div>
+                            <div class="row" id="skills">
                                 <div>
-                                    <h3> Relevant Skills</h3>
-                                    <ul> 
+                                    <h3 class="h3 left"> Relevant Skills</h3>
+                                    <ul class="bullets"> 
                                         <li>User Research </li>
                                         <li>Architecture</li>
                                         <li>Wireframing </li>
@@ -57,8 +67,8 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h3> Tools</h3>
-                                    <ul>
+                                    <h3 class="h3 left"> Tools</h3>
+                                    <ul class="bullets">
                                         <li>Figma </li>
                                         <li>Adobe XD</li>
                                         <li>HTML, CSS, JavaScrip </li>
@@ -72,25 +82,34 @@
             </div>
         </main>
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>Get in Touch</h2>
                 <p>Do you have any feedbacks about my work? Would you like to partner or collaborate? Always here for connections. Call: <a href="+4912345678900">+49 12345678900 </a> or Skype me at <a href="skype:larissasouzans">larissasouzans</a>. Prefer sending an email?</p>
-                <div>
-                    <a href="mailto:souzans.larissa@gmail.com">Email me</a>
+                <div class="social">
+                    <a href="mailto:souzans.larissa@gmail.com" class="button contact">Email me</a>
                 </div>
                 <div>
-                    <!--Social Media Layout and Placeholders-->
-                    <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/" target="_blank">
-                        <img src="img/olive/svg/linkedin.svg" alt="Linkedin">
-                    </a>
-                    <a href="https://twitter.com/?lang=de" target="_blank">
-                        <img src="img/olive/svg/Twitter.svg" alt="Twitter"/>
-                    </a>
-                    <a href="https://www.behance.net/larissasouza123" target="_blank">
-                        <img src="img/olive/svg/behance.svg" alt="Behance">
-                    </a>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                        <a href="https://twitter.com/?lang=d"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                        <a href="https://www.behance.net/larissasouza123"><i class="fa-brands fa-behance fa-2x"></i></a>
                     </div>
-                    <p>Copyright Larissa Souza 2023</p>
+                    <div class="social">
+                        <!--Social Media Layout and Placeholders-->
+                        <a href="https://www.linkedin.com/in/larissa-souza-4379a9245/" target="_blank">
+                            <img src="img/olive/svg/linkedin.svg" alt="Linkedin">
+                        </a>
+                        <a href="https://twitter.com/?lang=de" target="_blank">
+                         <img src="img/olive/svg/Twitter.svg" alt="Twitter"/>
+                        </a>
+                        <a href="https://www.behance.net/larissasouza123" target="_blank">
+                            <img src="img/olive/svg/behance.svg" alt="Behance">
+                        </a>
+                    </div>
+                    <div>
+                        <p id="copyright">Copyright Larissa Souza 2023</p>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>

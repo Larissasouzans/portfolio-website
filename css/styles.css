@@ -124,6 +124,13 @@ a {
   text-decoration: none;
 }
 
+a.cv {
+  color: #FF9A17;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
 a:hover,
 a:focus {
   color: #000000;
@@ -271,6 +278,22 @@ main {
   width: 100%;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 0 10px 0 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-picture {
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+
 footer {
   text-align: center;
   background: rgb(240, 190, 148);
@@ -305,4 +328,147 @@ footer {
   padding: 0;
   text-align: right;
   margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    font-size: 24px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  p {
+    display: block;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 15px auto;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    color: #000000;
+    letter-spacing: 0.05%;
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 5px 0;
+  }
+  
+  h4 {
+    font-size: 1em;
+    color: #000000;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0
+  }
+
+  a {
+    font-size: 19px;
+  }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-5 {
+    width: 40%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+    padding-bottom: 32px;
+  }
+
+  p {
+    font-size: 19px;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    color: #000000;
+    margin: 20px auto;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 15px auto;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 1.4em;
+    color: #000000;
+    letter-spacing: 0.05%;
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 5px 0;
+  }
+  
+  h4 {
+    font-size: 1em;
+    color: #000000;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin: 0
+  }
+
+  a {
+    font-size: 20px;
+  }
+
+
+}
+
+@keyframes color-change {
+  0% {fill: #61B15A;}
+  50% {fill: #3A6A36;}
+  100% {fill: #274724}
+}
+
+.olive {
+  animation: 4s color-change infinite alternate linear;
 }

@@ -21,15 +21,48 @@ body {
   color: #000000
 }
 
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#hero h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;;
+  color: #000000;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  margin: 20px 0;
+  padding-top: 2%;
+}
+
+#hero h1 span {
+display: block;
+margin: 2em;
+}
+
+#hero p span {
+  display: inline;
+  margin: 2em;
+}
+  
 h1, h2, h3, h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-}
-
-.h1.left, .h2.left, .h3.left, .h4.left {
-  text-align: left;
 }
 
 h1 {
@@ -69,7 +102,6 @@ h4 {
 p {
   margin: 0;
   padding: 15px 0;
-  text-align: center;
 }
 
 p.bold {
@@ -87,8 +119,10 @@ ul {
 }
 
 .bullets {
+  padding: 20px;
   list-style: none;
   font-size: 16px;
+  text-align: left;
 }
 
 .bullets li::before {
@@ -96,22 +130,29 @@ ul {
   color: #FF9A17;
   display: inline-block;
   width: 1em;
-  margin-left: -1em;
 }
 
-.about img {
+#work {
+  text-align: center;
+}
+  
+#about img {
   width: 100%;
   margin-bottom: 15px;
 }
 
 img {
   width: 100%; 
+  padding: 10px 0;
 }
 
 .social img {
   width: 40px;
   display: inline-block;
-  padding-top: 2%;
+}
+
+.social {
+padding-top: 2%;
 }
 
 .email a{
@@ -122,13 +163,6 @@ img {
 a {
   color: #FF9A17;
   text-decoration: none;
-}
-
-a.cv {
-  color: #FF9A17;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: center;
 }
 
 a:hover,
@@ -155,15 +189,6 @@ header {
   position: fixed;
   width: 100%;
   text-align:center;
-}
-
-#hero p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 10px 0;
-  line-height: 1.5;
-  margin: 0;
 }
 
 .logo {
@@ -195,24 +220,6 @@ nav>ul>li>a:hover {
   color: #994c30;
 }
 
-#hero h1 {
-  text-align: center;
-  font-family: 'Poppins', sans-serif;;
-  color: #000000;
-  font-size: 48px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  margin: 20px 0;
-  padding-top: 2%;
-}
-
-#hero {
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-}
-
 a.button {
   display: inline-block;
   background: #FF9A17;
@@ -238,20 +245,20 @@ a.button:hover {
 }
 
 a.button.download {
-  background: transparent;
+  background: #ffffff;
   -webkit-box-shadow: none;
   box-shadow: none;
   font-size: 16px;
   color: #FF9A17;
-  border: 3px solid #ffffff;
   transition: 0.2s;
   margin-top: 5px;
   margin-bottom: 20px;
+  text-decoration: none;
 }
 
 a.button.download:hover {
   color: #FF9A17;
-  background: #ffffff;
+  background: transparent;
 }
 
 a.button.contact {
@@ -259,7 +266,7 @@ a.button.contact {
   color: rgb(255, 255, 255, 85%);
   padding-left: 20px;
   margin-top: 40px;
-  border: 2px solid rgb(255, 255, 255, 55%);
+  border: 2px solid #FF9A17;
   transition: 0.2s;
 }
 
@@ -276,17 +283,6 @@ main {
 
 .my.story {
   width: 100%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 0 10px 0 10px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 #about-picture {
@@ -316,6 +312,10 @@ footer {
   padding: 10px 0;
   line-height: 1.5;
   margin: 0;
+}
+
+#contact a {
+color: #ffffff;
 }
 
 .email {
@@ -349,7 +349,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 15px;
   }
 
   main {
@@ -402,6 +402,26 @@ Medium devices (640px and larger)
   a {
     font-size: 19px;
   }
+
+  #work p {
+    text-align: left;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0 10px 0 10px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
 
 }
 
@@ -460,6 +480,19 @@ Large devices (1024px or larger)
     font-size: 20px;
   }
 
+  #about img {
+    margin: 0 auto;
+    max-width: 400px;
+    display: block;
+  }
+
+  #hero h1 span {
+    font-size: 20px;
+  }
+
+  #hero img {
+    max-width: 500px;
+  }
 
 }
 

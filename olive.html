@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
+        <script src="https://kit.fontawesome.com/e3221ba7f6.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -13,14 +14,17 @@
     <body>
         <header>
             <div class="container">
-                <a href="index.html"><img class="logo" src="img/olive/svg/logo.svg" alt="Logo Picture"></a>
-                <nav>
-                    <ul class="navigation">
-                        <li class="header"><a href="index.html">Work</a></li>
-                        <li class="header"><a href="about.html">About</a></li>
-                        <li class="header"><a href="#contact">Contact</a></li>
-                    </ul>
-                  </nav>
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html"><img class="logo" src="img/olive/svg/logo.svg" alt="Logo Picture"></a>
+                    <nav>
+                        <ul class="navigation">
+                            <li class="header"><a href="index.html">Work</a></li>
+                            <li class="header"><a href="about.html">About</a></li>
+                            <li class="header"><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
@@ -407,7 +411,7 @@
                         <img src="img/olive/svg/twitter.svg" alt="Twitter"/>
                     </a>
                     <a href="https://www.behance.net/larissasouza123" target="_blank">
-                        <img src="img/olive/svg/behance.svg" alt="Behance">
+                        <img src="img/olive/svg/bq  ehance.svg" alt="Behance">
                     </a>
                 </div>
                 <div>
@@ -415,5 +419,7 @@
                 </div>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
     </body>
 </html>

@@ -301,6 +301,8 @@ main {
   width: 100%;
 }
 
+
+
 #about-picture {
   width: 100%;
   padding: 0 10px 0 10px;
@@ -323,7 +325,7 @@ footer {
 
 #contact p {
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   padding: 10px 0;
   line-height: 1.5;
@@ -385,7 +387,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 15px;
+    margin-top: -8px;
   }
 
   nav > ul {
@@ -545,6 +547,14 @@ Large devices (1024px or larger)
   #hero img {
     max-width: 500px;
   }
+
+  #skills {
+    text-align: center;
+  }
+    
+  #skills .col-md-6 .col-lg-5{
+    text-align: center;
+   }
 
 }
 
